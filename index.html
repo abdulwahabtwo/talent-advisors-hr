@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talent Advisors HR | People Strategy & Workforce Solutions</title>
+  <style>
+    :root {
+      --teal: #0d9488;
+      --teal-dark: #0f766e;
+      --slate-900: #0f172a;
+      --slate-700: #334155;
+      --slate-500: #64748b;
+      --slate-100: #f1f5f9;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--slate-700);
+      line-height: 1.6;
+      background: var(--white);
+    }
+    header {
+      background: var(--slate-900);
+      color: var(--white);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo { font-weight: 700; font-size: 1.125rem; letter-spacing: -0.02em; }
+    header nav a {
+      color: var(--slate-100);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.9375rem;
+    }
+    header nav a:hover { color: var(--teal); }
+    .hero {
+      background: linear-gradient(135deg, var(--slate-900) 0%, #1e293b 50%, var(--teal-dark) 100%);
+      color: var(--white);
+      padding: 5rem 1.5rem 4.5rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      max-width: 36rem;
+      margin: 0 auto 2rem;
+      color: #cbd5e1;
+    }
+    .hero .btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--white);
+      padding: 0.875rem 1.75rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .hero .btn:hover { background: #14b8a6; }
+    section { padding: 4rem 1.5rem; max-width: 960px; margin: 0 auto; }
+    section h2 {
+      text-align: center;
+      color: var(--slate-900);
+      font-size: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.75rem;
+      background: var(--slate-100);
+    }
+    .service-card h3 {
+      color: var(--teal-dark);
+      font-size: 1.125rem;
+      margin-bottom: 0.75rem;
+    }
+    .service-card p { font-size: 0.9375rem; color: var(--slate-500); }
+    .cta {
+      background: var(--slate-900);
+      color: var(--white);
+      text-align: center;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      margin: 0 1.5rem 4rem;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .cta p { color: #94a3b8; margin-bottom: 1.5rem; }
+    .cta a {
+      color: var(--teal);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.125rem;
+    }
+    .cta a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--slate-500);
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">Talent Advisors HR</span>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>People strategy that scales with your business</h1>
+      <p>We partner with leaders to design workforce solutions—talent planning, culture, and HR operations that drive results.</p>
+      <a class="btn" href="#contact">Schedule a consultation</a>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <article class="service-card">
+          <h3>Workforce Planning</h3>
+          <p>Align headcount, skills, and succession with your growth goals through data-informed people strategy.</p>
+        </article>
+        <article class="service-card">
+          <h3>HR Policy & Compliance</h3>
+          <p>Practical policies, handbook updates, and compliance guidance tailored to your industry and size.</p>
+        </article>
+        <article class="service-card">
+          <h3>Leadership & Culture</h3>
+          <p>Build manager capability, engagement programs, and values-led culture that retains top talent.</p>
+        </article>
+      </div>
+    </section>
+    <section class="cta" id="contact">
+      <h2>Ready to strengthen your people strategy?</h2>
+      <p>Tell us about your organization—we’ll respond within one business day.</p>
+      <a href="mailto:hello@talentadvisorshr.com">hello@talentadvisorshr.com</a>
+    </section>
+  </main>
+  <footer>&copy; 2026 Talent Advisors HR. All rights reserved.</footer>
+</body>
+</html>
